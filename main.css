@@ -12,7 +12,12 @@
   justify-content: center;
 }
 
-.ghibli {
+#root h2 {
+  font-family: monospace;
+  color: red;
+}
+
+.dBall-div {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -20,10 +25,13 @@
   width: 300px;
   padding: 24px;
   background-color: rgb(211, 207, 207);
+  border-radius: 10px;
+  border-color: blueviolet;
+  border-width: 2px;
+  border-style: solid;
 }
 
-.ghibli-image {
-  width: 200px;
-  height: auto;
+.dBall-img {
+  height: 300px;
   object-fit: cover;
 }
