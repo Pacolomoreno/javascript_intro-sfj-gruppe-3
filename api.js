@@ -1,9 +1,13 @@
-const apiUrl="https://dragonball-api.com/api/characters";
+// const apiUrl="https://dragonball-api.com/api/characters";
+// const apiUrl="https://dragonball-api.com/api/planets";
+const apiUrl="https://dragonball-api.com/api/transformations";
+
 
 async function dataImport(){
     const dataLoader= await fetch(apiUrl);
-    const dataObject= await dataLoader.json();
-    const dataArray=dataObject.items
+    const dataArray= await dataLoader.json();
+    // const dataObject= await dataLoader.json();
+    // const dataArray=dataObject.items
 
     dataArray.map((hero)=>{
 console.log(hero);
